@@ -1,25 +1,25 @@
 .TodoSearch {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    background: #e37065;
+    position: relative;
+    left: 35%;
+    background: #dc4c3e;;
     border-radius: 5px;
-    height: 40px;
+    height: 30px;
     font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-color: #e37065;
     outline: none;
     border: none;
-    margin-right: 20px;
     padding-left: 10px;
+    margin-top: 2%;
+    width: 30%;
   }
   
   .TodoSearch::placeholder {
-    color: #f7d5d2;
+    color: #ffffff;
   }
   
   .TodoSearch:focus {
-    background: #ffffff;
+    background:#282828;
+    color: #ffffff;
     outline-color: #61DAFA;
   }
