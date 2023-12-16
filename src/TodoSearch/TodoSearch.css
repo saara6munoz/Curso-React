@@ -1,0 +1,25 @@
+.TodoSearch {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background: #e37065;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-color: #e37065;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    padding-left: 10px;
+  }
+  
+  .TodoSearch::placeholder {
+    color: #f7d5d2;
+  }
+  
+  .TodoSearch:focus {
+    background: #ffffff;
+    outline-color: #61DAFA;
+  }
