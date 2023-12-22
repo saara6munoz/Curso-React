@@ -34,13 +34,13 @@ function App() {
 
   return (
     <>
-      <TodoCounter 
-      completed={completedTodos} 
-      total={totalTodos} />
-
       <TodoSearch 
       searchValue={searchValue}
       setSearchValue={setSearchValue}/>
+
+      <TodoCounter 
+      completed={completedTodos} 
+      total={totalTodos} />
 
       <TodoList>
         {searchedTodos.map(todo => (

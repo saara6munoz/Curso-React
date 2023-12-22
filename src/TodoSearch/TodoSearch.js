@@ -1,11 +1,14 @@
 import React from 'react';
 import './TodoSearch.css';
+import fondoEstrellado from '../static/fondo.jpg'
 
 function TodoSearch({
   searchValue,
   setSearchValue,
 }) {
   return (
+    <div className='encabezado'>
+      <img src={fondoEstrellado} alt="Descripción de la imagen"/>
     <input
       placeholder="Buscar..."
       className="TodoSearch"
@@ -14,6 +17,7 @@ function TodoSearch({
         setSearchValue(event.target.value);
       }}
     />
+    </div>
   );
 }
 

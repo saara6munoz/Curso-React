@@ -1,17 +1,31 @@
+.encabezado{
+  top:0%;
+  position:absolute;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+  img {
+    top:0%;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
+
 .TodoSearch {
-    position: relative;
-    left: 35%;
-    background: #dc4c3e;;
-    border-radius: 5px;
-    height: 30px;
+    position:absolute;
+    top: 125%;
+    left: 40%;
+    width: 20%; /* Opcional: para ocupar el ancho completo de la pantalla */
     font-size: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-color: #e37065;
-    outline: none;
-    border: none;
-    padding-left: 10px;
-    margin-top: 2%;
-    width: 30%;
+    text-align: center;
+    padding: 5px;
+    background-color:#252423;
+    border-color: #1b1a19;
+    border-radius: 8px;
+  /*  color: #ffffff;*/
   }
   
   .TodoSearch::placeholder {
@@ -19,7 +33,7 @@
   }
   
   .TodoSearch:focus {
-    background:#282828;
+    background:rgba(40,40,40,255);
     color: #ffffff;
-    outline-color: #61DAFA;
+    outline-color: #5b4ed3;
   }
