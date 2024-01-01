@@ -3,7 +3,10 @@ import './TodoItem.css';
 function TodoItem(props) {
   return (
     <li className="TodoItem">
-      <span className={`Icon Icon-check ${props.completed && "Icon-check--active"}`}>
+     <span
+        className={`Icon Icon-check ${props.completed && "Icon-check--active"}`}
+        onClick={props.onComplete}
+      >
       <svg
         className="check-circle-icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +24,10 @@ function TodoItem(props) {
       <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
         {props.text}
       </p>
-      <span className="Icon Icon-delete">
+      <span
+        className="Icon Icon-delete"
+        onClick={props.onDelete}
+      >
         X
       </span>
     </li>

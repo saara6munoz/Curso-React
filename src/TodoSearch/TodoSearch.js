@@ -7,8 +7,10 @@ function TodoSearch({
   setSearchValue,
 }) {
   return (
+    <>
     <div className='encabezado'>
       <img src={fondoEstrellado} alt="Descripción de la imagen"/>
+    </div>
     <input
       placeholder="Buscar..."
       className="TodoSearch"
@@ -17,7 +19,7 @@ function TodoSearch({
         setSearchValue(event.target.value);
       }}
     />
-    </div>
+    </>
   );
 }
 
