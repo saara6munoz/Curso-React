@@ -1,6 +1,5 @@
 import React from 'react';
 import './TodoSearch.css';
-import fondoEstrellado from '../static/fondo.jpg'
 
 function TodoSearch({
   searchValue,
@@ -8,9 +7,6 @@ function TodoSearch({
 }) {
   return (
     <>
-    <div className='encabezado'>
-      <img src={fondoEstrellado} alt="Descripción de la imagen"/>
-    </div>
     <input
       placeholder="Buscar..."
       className="TodoSearch"

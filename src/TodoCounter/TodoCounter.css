@@ -17,3 +17,19 @@
 .TodoCounter span {
   font-weight: bold;
 }
+
+.encabezado{
+  top:0%;
+  position:absolute;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+  img {
+    top:0%;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
