@@ -1,11 +1,15 @@
 import { TodoCounter } from './TodoCounter/TodoCounter';
 import { TodoList } from './TodoList/TodoList';
-import { TodoItem } from './TodoItem/TodoItem';
 import { CreateTodoButton } from './CreateTodoButton/CreateTodoButton';
 import { TodoSearch } from './TodoSearch/TodoSearch';
+import { TodosLoading } from './TodoLoading/TodoLoading';
+import { TodosError } from './TodoError/TodoError';
+import { EmptyTodos } from './TodoEmpty/TodoEmpty';
 //import { NotYetIcon } from '../icons/NotYetIcon';
 
 function AppUI({
+    loading,
+    error,
     completedTodos,
     totalTodos,
     searchValue,
@@ -26,15 +30,15 @@ function AppUI({
         />
   
         <TodoList>
-          {searchedTodos.map(todo => (
-            <TodoItem
-              key={todo.text}
-              text={todo.text}
-              completed={todo.completed}
-              onComplete={() => completeTodo(todo.text)}
-              onDelete={() => deleteTodo(todo.text)}
-            />
-          ))}
+          {loading && (
+            <>
+              <TodosLoading/>
+              <TodosLoading/>
+              <TodosLoading/>
+            </> 
+          )}
+          {error && <TodosError/>}
+          {(!loading && searchedTodos.length === 0) && <EmptyTodos/>}
         </TodoList>
         
         <CreateTodoButton />

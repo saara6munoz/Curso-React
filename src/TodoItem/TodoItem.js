@@ -1,6 +1,5 @@
 import { CompleteIcon } from '../icons/CompleteIcon'
 import { DeleteIcon } from '../icons/DeleteIcon'
-import { NotYetIcon } from '../icons/NotYetIcon'
 import './TodoItem.css';
 
 function TodoItem(props) {
@@ -18,10 +17,6 @@ function TodoItem(props) {
       <DeleteIcon
         onDelete={props.onDelete}
       />
-
-     {/*<NotYetIcon
-        onNotYet={props.onNotYet}
-  />*/}
   
     </li>
   );

@@ -14,9 +14,18 @@ import { useLocalStorage } from './CustomHooks/useLocalStorage';
 // localStorage.removeItem('TODOS_V1');
 
 function App() {
-  const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
-  const [searchValue, setSearchValue] = React.useState('');
+  const {
+    item: todos, 
+    saveItem: saveTodos,
+    loading,
+    error,
+  } = useLocalStorage('TODOS_V1', []);
 
+  const [searchValue, setSearchValue] = React.useState('');
+  // Add a check for undefined todos
+  if (todos === undefined) {
+    return <p>Loading...</p>; // or some loading indicator
+  }
   const completedTodos = todos.filter(
     todo => !!todo.completed
   ).length;
@@ -50,6 +59,8 @@ function App() {
   
   return (
     <AppUI
+      loading={loading}
+      error={error}
       completedTodos={completedTodos}
       totalTodos={totalTodos}
       searchValue={searchValue}
