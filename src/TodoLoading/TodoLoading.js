@@ -3,11 +3,16 @@ import './TodoLoading.css';
 
 function TodosLoading() {
   return (
-    <div className="LoadingTodo-container">
-      <span className="LoadingTodo-completeIcon"></span>
-      <p className="LoadingTodo-text"></p>
-      <span className="LoadingTodo-deleteIcon"></span>
-    </div>
+      <div className='centrao'>
+<div class="spinner">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+      </div>
   );
 }
 

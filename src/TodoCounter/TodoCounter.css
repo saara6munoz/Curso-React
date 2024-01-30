@@ -1,13 +1,11 @@
 .TodoCounter {
     position: relative;
-    top:0%;
-    left: 35%;
-    background: rgba(32, 35, 41, 0.15);
+    left: 39%;
     height: 40px;
     font-size: 22px;
+    text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-color: #e37065;
-    padding-left: 7%;
     margin-top: 4%; /* Ajusta este valor según sea necesario */
     width: 20%;
     color: #ffffff;
@@ -18,17 +16,16 @@
   font-weight: bold;
 }
 
-.encabezado{
-  top:0%;
-  position:fixed;
+.encabezado {
+  top: 0%;
+  position: fixed;
   height: 300px;
+}
+
+.encabezado img {
+  top: 0%;
+  width: 100%;
+  height: auto; /* Esto permite que la altura se ajuste automáticamente para mantener la proporción original de la imagen */
   object-fit: cover;
   object-position: bottom;
-  img {
-    top:0%;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: bottom;
-  }
 }
